@@ -7,6 +7,7 @@ SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
+DOCSDIR       = docs
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -30,4 +31,11 @@ open:
 
 .PHONY: watch
 watch:
-	./venv/bin/sphinx-autobuild source build --port=4184
+	./venv/bin/sphinx-autobuild "$(SOURCEDIR)" "$(BUILDDIR)" --port=4184
+
+publish:
+	@rm -rf "$(DOCSDIR)"
+	@make html
+	@cp -r "$(BUILDDIR)/html" "$(DOCSDIR)"
+	@cp -r "$(BUILDDIR)/_static" "$(DOCSDIR)/_static"
+	@rm -rf "$(DOCSDIR)/_sources"
