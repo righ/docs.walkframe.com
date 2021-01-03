@@ -37,4 +37,3 @@ publish:
 	@rm -rf "$(DOCSDIR)"
 	@make html
 	@cp -r "$(BUILDDIR)/html" "$(DOCSDIR)"
-	@rm -rf "$(DOCSDIR)/_sources"
