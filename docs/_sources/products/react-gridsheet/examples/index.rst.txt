@@ -26,9 +26,9 @@ Example1
 
 - Cell config:
 
-  :``options.cells[column].label``: Column label.
-  :``options.cells[column].width``: Column width.
-  :``options.cells[column].style``: Cell style in the column.
+  - ``options.cells[column].label``: Column label.
+  - ``options.cells[column].width``: Column width.
+  - ``options.cells[column].style``: Cell style in the column.
 
 Example2
 --------------
