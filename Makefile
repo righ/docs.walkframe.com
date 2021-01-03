@@ -38,3 +38,4 @@ publish:
 	@make html
 	@cp -r "$(BUILDDIR)/html" "$(DOCSDIR)"
 	@cp CNAME "$(DOCSDIR)/CNAME"
+	@touch docs/.nojekyll
