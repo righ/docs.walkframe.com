@@ -4,13 +4,16 @@
 
 Examples
 ========
-Here are `react-gridsheet` examples in demo.
+Here are `react-gridsheet <https://www.npmjs.com/package/react-gridsheet>`__ examples in demo.
 
 .. note::
 
   - It seems that dragging cells does not work well over iframe (embedded codesandbox) in Chrome browser.
     
     - Go see the example directly.
+
+  - `GitHub <https://github.com/righ/react-gridsheet>`__
+  - `Document </products/react-gridsheet/>`__
 
 Example1
 --------------
@@ -42,17 +45,19 @@ Example2
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-- Dark mode: ``options.mode = 'dark'``
-- API response formatter: ``oa2aa(response.data)`` (Converting *object in array* to *array in array*)
+- Dark mode:
+
+  - ``options.mode = 'dark'``: Set mode dark
+
+- API response format:
+
+  - ``oa2aa(response.data)``: converts ``object in array`` to ``array in array``
+
 - Custom renderer:
 
-  - You can create a new Renderer inheriting ``Renderer`` class.
-
-    - It has to be registered to ``options.renderers`` object. The key identifies the renderer.
-
-  - To use the renderer, you have to specify the renderer's identity to ``options.cells[column].renderer``.
-
-
+  - IdRenderer: renders a number without comma.
+  - ImageRenderer: renders an image related to the string as a link.
+  - LinkRenderer: renders the string as a link.
 
 Example3
 --------------
@@ -68,14 +73,9 @@ Example3
 
 - Custom parser:
 
-  - You can create a new Parser inheriting ``Parser`` class.
-
-    - It has to be registered to ``options.parsers`` object. The key identifies the parser.
-
-  - To use the parser, you have to specify the parser's identity to ``options.cells[column].parser``.
+  - ListParser: parses a newline delimited string as a (string) list.
 
 - Feedback functions:
 
-  - onSave: A callback function on you saving (`Ctrl + s` or `Command + s`).
-
-  - onChange: A callback function on ``matrix`` or ``options.cells`` changed.
+  - onSave: ``setTsv`` is set to render TSV.
+  - onChange: ``console.log`` is set to show the changes.

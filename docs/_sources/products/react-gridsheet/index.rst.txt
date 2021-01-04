@@ -8,6 +8,7 @@ ReactGridsheet
 
   - `Examples </products/react-gridsheet/examples>`__
   - `GitHub <https://github.com/righ/react-gridsheet>`__
+  - `NPM <https://www.npmjs.com/package/react-gridsheet>`__
 
 Installation
 -------------------------
@@ -26,7 +27,8 @@ How to use
 
 .. code-block:: jsx
 
-  import GridSheet from "react-gridsheet";
+  import * as React from "react";
+  import { GridSheet } from "react-gridsheet";
 
   export default function App() {
     return (<div>

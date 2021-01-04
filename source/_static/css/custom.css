@@ -16,6 +16,7 @@ dl.field-list {
 dl.field-list dt {
   width: 25%;
   padding: 10px;
+  box-sizing: border-box;
   margin-top: 0;
   align-items: center;
   justify-content: center;
@@ -25,8 +26,34 @@ dl.field-list dt {
 }
 
 dl.field-list dd {
-  width: 65%;
+  width: 75%;
   padding: 10px;
+  box-sizing: border-box;
   margin: 0;
   border: solid 1px #777777;
+}
+
+@media screen and (max-width:750px) {
+  dl.field-list {
+    display: block;
+    border-top: none;
+  }
+  
+  dl.field-list dt {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #999999;
+    border: solid 1px #777777;
+    color: #000000;
+  }
+  
+  dl.field-list dd {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border: solid 1px #777777;
+  }
 }

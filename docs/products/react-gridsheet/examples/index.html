@@ -129,7 +129,7 @@
 </div>
 <div class="section" id="examples">
 <h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
-<p>Here are <cite>react-gridsheet</cite> examples in demo.</p>
+<p>Here are <a class="reference external" href="https://www.npmjs.com/package/react-gridsheet">react-gridsheet</a> examples in demo.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -138,6 +138,8 @@
 <li><p>Go see the example directly.</p></li>
 </ul>
 </li>
+<li><p><a class="reference external" href="https://github.com/righ/react-gridsheet">GitHub</a></p></li>
+<li><p><a class="reference external" href="/products/react-gridsheet/">Document</a></p></li>
 </ul>
 </div>
 <div class="section" id="example1">
@@ -155,16 +157,21 @@
 <div class="section" id="example2">
 <h2>Example2<a class="headerlink" href="#example2" title="Permalink to this headline">¶</a></h2>
 <iframe allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts" src="https://codesandbox.io/embed/react-gridsheet-with-api-response-in-dark-mode-e4gpn?fontsize=14&amp;hidenavigation=1&amp;theme=dark" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" title="react-gridsheet with api response in dark mode"></iframe><ul class="simple">
-<li><p>Dark mode: <code class="docutils literal notranslate"><span class="pre">options.mode</span> <span class="pre">=</span> <span class="pre">'dark'</span></code></p></li>
-<li><p>API response formatter: <code class="docutils literal notranslate"><span class="pre">oa2aa(response.data)</span></code> (Converting <em>object in array</em> to <em>array in array</em>)</p></li>
-<li><p>Custom renderer:</p>
+<li><p>Dark mode:</p>
 <ul>
-<li><p>You can create a new Renderer inheriting <code class="docutils literal notranslate"><span class="pre">Renderer</span></code> class.</p>
-<ul>
-<li><p>It has to be registered to <code class="docutils literal notranslate"><span class="pre">options.renderers</span></code> object. The key identifies the renderer.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">options.mode</span> <span class="pre">=</span> <span class="pre">'dark'</span></code>: Set mode dark</p></li>
 </ul>
 </li>
-<li><p>To use the renderer, you have to specify the renderer’s identity to <code class="docutils literal notranslate"><span class="pre">options.cells[column].renderer</span></code>.</p></li>
+<li><p>API response format:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">oa2aa(response.data)</span></code>: converts <code class="docutils literal notranslate"><span class="pre">object</span> <span class="pre">in</span> <span class="pre">array</span></code> to <code class="docutils literal notranslate"><span class="pre">array</span> <span class="pre">in</span> <span class="pre">array</span></code></p></li>
+</ul>
+</li>
+<li><p>Custom renderer:</p>
+<ul>
+<li><p>IdRenderer: renders a number without comma.</p></li>
+<li><p>ImageRenderer: renders an image related to the string as a link.</p></li>
+<li><p>LinkRenderer: renders the string as a link.</p></li>
 </ul>
 </li>
 </ul>
@@ -174,18 +181,13 @@
 <iframe allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts" src="https://codesandbox.io/embed/react-gridsheet-sample-with-parser-and-feedback-method-hhlnn?fontsize=14&amp;hidenavigation=1&amp;theme=dark" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" title="react-gridsheet sample with parser and feedback method"></iframe><ul class="simple">
 <li><p>Custom parser:</p>
 <ul>
-<li><p>You can create a new Parser inheriting <code class="docutils literal notranslate"><span class="pre">Parser</span></code> class.</p>
-<ul>
-<li><p>It has to be registered to <code class="docutils literal notranslate"><span class="pre">options.parsers</span></code> object. The key identifies the parser.</p></li>
-</ul>
-</li>
-<li><p>To use the parser, you have to specify the parser’s identity to <code class="docutils literal notranslate"><span class="pre">options.cells[column].parser</span></code>.</p></li>
+<li><p>ListParser: parses a newline delimited string as a (string) list.</p></li>
 </ul>
 </li>
 <li><p>Feedback functions:</p>
 <ul>
-<li><p>onSave: A callback function on you saving (<cite>Ctrl + s</cite> or <cite>Command + s</cite>).</p></li>
-<li><p>onChange: A callback function on <code class="docutils literal notranslate"><span class="pre">matrix</span></code> or <code class="docutils literal notranslate"><span class="pre">options.cells</span></code> changed.</p></li>
+<li><p>onSave: <code class="docutils literal notranslate"><span class="pre">setTsv</span></code> is set to render TSV.</p></li>
+<li><p>onChange: <code class="docutils literal notranslate"><span class="pre">console.log</span></code> is set to show the changes.</p></li>
 </ul>
 </li>
 </ul>
