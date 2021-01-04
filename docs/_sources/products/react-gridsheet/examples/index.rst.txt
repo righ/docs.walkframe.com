@@ -57,7 +57,7 @@ Example2
 
   - IdRenderer: renders a number without comma.
   - ImageRenderer: renders an image related to the string as a link.
-  - LinkRenderer: renders a string as a link.
+  - LinkRenderer: renders the string as a link.
 
 Example3
 --------------
