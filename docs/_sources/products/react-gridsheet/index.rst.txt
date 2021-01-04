@@ -87,12 +87,12 @@ options prop
 
 :options.headerHeight:
 
-  - Vertical header height.
+  - Horizontal header height.
   - default: ``"20px"``
 
 :options.headerWidth:
 
-  - Horizontal header width.
+  - Vertical header width.
   - default: ``"50px"``
 
 :options.defaultHeight:
