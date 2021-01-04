@@ -291,7 +291,8 @@
 <li><p>To use the renderer, you have to specify the renderer’s identity to <code class="docutils literal notranslate"><span class="pre">options.cells[column].renderer</span></code>.</p></li>
 <li><p>default: <code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
 </ul>
-<div class="highlight-jsx notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span>
+<div class="highlight-jsx notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s2">"react"</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span>
   <span class="nx">GridSheet</span><span class="p">,</span>
   <span class="nx">Renderer</span><span class="p">,</span>
 <span class="p">}</span> <span class="nx">from</span> <span class="s2">"react-gridsheet"</span><span class="p">;</span>
@@ -302,21 +303,23 @@
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="k">return</span> <span class="p">(&lt;</span><span class="nt">GridSheet</span>
-  <span class="na">data</span><span class="o">=</span><span class="p">{[</span> <span class="c1">// any[][]</span>
-    <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="mf">1</span><span class="p">,</span> <span class="kc">true</span><span class="p">],</span>
-    <span class="p">[</span><span class="s2">"b"</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="kc">false</span><span class="p">],</span>
-    <span class="p">[</span><span class="s2">"c"</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="kc">null</span><span class="p">],</span>
-  <span class="p">]}</span>
-  <span class="na">options</span><span class="o">=</span><span class="p">{{</span>
-    <span class="nx">renderers</span><span class="o">:</span> <span class="p">{</span>
-      <span class="nx">quote</span><span class="o">:</span> <span class="nx">QuoteRenderer</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="nx">cells</span><span class="o">:</span> <span class="p">{</span>
-      <span class="nx">A</span><span class="o">:</span> <span class="p">{</span> <span class="nx">renderer</span><span class="o">:</span> <span class="s2">"quote"</span> <span class="p">},</span>
-    <span class="p">},</span>
-  <span class="p">}}</span>
-<span class="p">/&gt;)</span>
+<span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(&lt;</span><span class="nt">GridSheet</span>
+    <span class="na">data</span><span class="o">=</span><span class="p">{[</span> <span class="c1">// any[][]</span>
+      <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="mf">1</span><span class="p">,</span> <span class="kc">true</span><span class="p">],</span>
+      <span class="p">[</span><span class="s2">"b"</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="kc">false</span><span class="p">],</span>
+      <span class="p">[</span><span class="s2">"c"</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="kc">null</span><span class="p">],</span>
+    <span class="p">]}</span>
+    <span class="na">options</span><span class="o">=</span><span class="p">{{</span>
+      <span class="nx">renderers</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">quote</span><span class="o">:</span> <span class="nx">QuoteRenderer</span><span class="p">,</span>
+      <span class="p">},</span>
+      <span class="nx">cells</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">A</span><span class="o">:</span> <span class="p">{</span> <span class="nx">renderer</span><span class="o">:</span> <span class="s2">"quote"</span> <span class="p">},</span>
+      <span class="p">},</span>
+    <span class="p">}}</span>
+  <span class="p">/&gt;)</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </dd>
@@ -330,7 +333,8 @@
 <li><p>To use the parser, you have to specify the parser’s identity to <code class="docutils literal notranslate"><span class="pre">options.cells[column].parser</span></code>.</p></li>
 <li><p>default: <code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
 </ul>
-<div class="highlight-jsx notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span>
+<div class="highlight-jsx notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s2">"react"</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span>
   <span class="nx">GridSheet</span><span class="p">,</span>
   <span class="nx">Parser</span><span class="p">,</span>
 <span class="p">}</span> <span class="nx">from</span> <span class="s2">"react-gridsheet"</span><span class="p">;</span>
@@ -345,21 +349,23 @@
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="k">return</span> <span class="p">(&lt;</span><span class="nt">GridSheet</span>
-  <span class="na">data</span><span class="o">=</span><span class="p">{[</span> <span class="c1">// any[][]</span>
-    <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="mf">1</span><span class="p">,</span> <span class="kc">true</span><span class="p">],</span>
-    <span class="p">[</span><span class="s2">"b"</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="kc">false</span><span class="p">],</span>
-    <span class="p">[</span><span class="s2">"c"</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="kc">null</span><span class="p">],</span>
-  <span class="p">]}</span>
-  <span class="na">options</span><span class="o">=</span><span class="p">{{</span>
-    <span class="nx">parsers</span><span class="o">:</span> <span class="p">{</span>
-      <span class="nb">eval</span><span class="o">:</span> <span class="nx">EvalParser</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="nx">cells</span><span class="o">:</span> <span class="p">{</span>
-      <span class="nx">C</span><span class="o">:</span> <span class="p">{</span> <span class="nx">parser</span><span class="o">:</span> <span class="s2">"eval"</span> <span class="p">},</span>
-    <span class="p">},</span>
-  <span class="p">}}</span>
-<span class="p">/&gt;)</span>
+<span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(&lt;</span><span class="nt">GridSheet</span>
+    <span class="na">data</span><span class="o">=</span><span class="p">{[</span> <span class="c1">// any[][]</span>
+      <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="mf">1</span><span class="p">,</span> <span class="kc">true</span><span class="p">],</span>
+      <span class="p">[</span><span class="s2">"b"</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="kc">false</span><span class="p">],</span>
+      <span class="p">[</span><span class="s2">"c"</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="kc">null</span><span class="p">],</span>
+    <span class="p">]}</span>
+    <span class="na">options</span><span class="o">=</span><span class="p">{{</span>
+      <span class="nx">parsers</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nb">eval</span><span class="o">:</span> <span class="nx">EvalParser</span><span class="p">,</span>
+      <span class="p">},</span>
+      <span class="nx">cells</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">C</span><span class="o">:</span> <span class="p">{</span> <span class="nx">parser</span><span class="o">:</span> <span class="s2">"eval"</span> <span class="p">},</span>
+      <span class="p">},</span>
+    <span class="p">}}</span>
+  <span class="p">/&gt;)</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </dd>
