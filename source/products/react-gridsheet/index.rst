@@ -142,6 +142,7 @@ options prop
 
   .. code-block:: jsx
 
+    import * as React from "react";
     import {
       GridSheet,
       Renderer,
@@ -153,21 +154,23 @@ options prop
       }
     }
 
-    return (<GridSheet
-      data={[ // any[][]
-        ["a", 1, true],
-        ["b", 2, false],
-        ["c", 3, null],
-      ]}
-      options={{
-        renderers: {
-          quote: QuoteRenderer,
-        },
-        cells: {
-          A: { renderer: "quote" },
-        },
-      }}
-    />)
+    export default function App() {
+      return (<GridSheet
+        data={[ // any[][]
+          ["a", 1, true],
+          ["b", 2, false],
+          ["c", 3, null],
+        ]}
+        options={{
+          renderers: {
+            quote: QuoteRenderer,
+          },
+          cells: {
+            A: { renderer: "quote" },
+          },
+        }}
+      />)
+    }
 
 :options.parsers: 
 
@@ -181,6 +184,7 @@ options prop
 
   .. code-block:: jsx
 
+    import * as React from "react";
     import {
       GridSheet,
       Parser,
@@ -196,21 +200,23 @@ options prop
       }
     }
 
-    return (<GridSheet
-      data={[ // any[][]
-        ["a", 1, true],
-        ["b", 2, false],
-        ["c", 3, null],
-      ]}
-      options={{
-        parsers: {
-          eval: EvalParser,
-        },
-        cells: {
-          C: { parser: "eval" },
-        },
-      }}
-    />)
+    export default function App() {
+      return (<GridSheet
+        data={[ // any[][]
+          ["a", 1, true],
+          ["b", 2, false],
+          ["c", 3, null],
+        ]}
+        options={{
+          parsers: {
+            eval: EvalParser,
+          },
+          cells: {
+            C: { parser: "eval" },
+          },
+        }}
+      />)
+    }
 
 
 :options.onSave: 

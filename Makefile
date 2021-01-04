@@ -39,3 +39,6 @@ publish:
 	@cp -r "$(BUILDDIR)/html" "$(DOCSDIR)"
 	@cp CNAME "$(DOCSDIR)/CNAME"
 	@touch docs/.nojekyll
+	@git add docs
+	@git commit -m 'update docs'
+	@git push origin main
