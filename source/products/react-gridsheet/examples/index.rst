@@ -60,7 +60,7 @@ Example2
   - LinkRenderer: renders a string as a link.
 
 Example3
---------------
+---------------
 
 .. raw:: html
 
