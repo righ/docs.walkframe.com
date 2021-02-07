@@ -163,7 +163,7 @@ options prop
         ]}
         options={{
           renderers: {
-            quote: QuoteRenderer,
+            quote: new QuoteRenderer(),
           },
           cells: {
             A: { renderer: "quote" },
@@ -209,7 +209,7 @@ options prop
         ]}
         options={{
           parsers: {
-            eval: EvalParser,
+            eval: new EvalParser(),
           },
           cells: {
             C: { parser: "eval" },
