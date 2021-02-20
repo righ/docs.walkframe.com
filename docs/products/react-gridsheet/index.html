@@ -178,7 +178,15 @@
 <dt class="field-odd">options.cells</dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">options.cells</span></code> affects the cells matching the keys.</p>
 <ul class="simple">
-<li><p><cite>default</cite> (lowercase) field matches all rows, columns and cells.</p></li>
+<li><p><cite>default</cite> (lowercase) field matches all rows, columns and cells.</p>
+<ul>
+<li><p>You can set default height and width here.</p>
+<ul>
+<li><p>defaultHeight and defaultWidth has been dropped.</p></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><p>An upppercase letter field means a config for a column.</p>
 <ul>
 <li><p>e.g. <strong>A</strong>: 1st column, <strong>B</strong>: 2nd column</p></li>
@@ -219,6 +227,35 @@
 <dd class="field-odd"><p>Parser identity. (string)</p>
 </dd>
 </dl>
+<p>Example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">cells</span><span class="o">:</span> <span class="p">{</span>
+  <span class="k">default</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">width</span><span class="o">:</span> <span class="mf">100</span><span class="p">,</span> <span class="c1">// px</span>
+    <span class="nx">height</span><span class="o">:</span> <span class="mf">25</span><span class="p">,</span> <span class="c1">// px</span>
+  <span class="p">},</span>
+  <span class="nx">A</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">style</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">borderBottom</span><span class="o">:</span> <span class="s2">"double 2px #ff0000"</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">},</span>
+  <span class="mf">1</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">height</span><span class="o">:</span> <span class="mf">50</span><span class="p">,</span>
+  <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd>
+<dt class="field-even">options.sheetHeight</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Sheet width size.</p></li>
+<li><p>default: <code class="docutils literal notranslate"><span class="pre">500</span></code></p></li>
+</ul>
+</dd>
+<dt class="field-odd">options.sheetWidth</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>History (undo, redo) size.</p></li>
+<li><p>default: <code class="docutils literal notranslate"><span class="pre">1000</span></code></p></li>
+</ul>
 </dd>
 <dt class="field-even">options.historySize</dt>
 <dd class="field-even"><ul class="simple">
@@ -228,26 +265,14 @@
 </dd>
 <dt class="field-odd">options.headerHeight</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p>Horizontal header height.</p></li>
-<li><p>default: <code class="docutils literal notranslate"><span class="pre">"20px"</span></code></p></li>
+<li><p>Horizontal header height. (number)</p></li>
+<li><p>default: <code class="docutils literal notranslate"><span class="pre">20</span></code></p></li>
 </ul>
 </dd>
 <dt class="field-even">options.headerWidth</dt>
 <dd class="field-even"><ul class="simple">
-<li><p>Vertical header width.</p></li>
-<li><p>default: <code class="docutils literal notranslate"><span class="pre">"50px"</span></code></p></li>
-</ul>
-</dd>
-<dt class="field-odd">options.defaultHeight</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p>Default cell height.</p></li>
-<li><p>default: <code class="docutils literal notranslate"><span class="pre">"20px"</span></code></p></li>
-</ul>
-</dd>
-<dt class="field-even">options.defaultWidth</dt>
-<dd class="field-even"><ul class="simple">
-<li><p>Default cell width.</p></li>
-<li><p>default: <code class="docutils literal notranslate"><span class="pre">"90px"</span></code></p></li>
+<li><p>Vertical header width. (number)</p></li>
+<li><p>default: <code class="docutils literal notranslate"><span class="pre">50</span></code></p></li>
 </ul>
 </dd>
 <dt class="field-odd">options.editingOnEnter</dt>
@@ -262,27 +287,14 @@
 <li><p>default: <code class="docutils literal notranslate"><span class="pre">true</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-odd">options.stickyHeaders</dt>
+<dt class="field-odd">options.mode</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p>Header fixing specification.</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">"both"</span></code>: horizontal and vertical headers are both fixed.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">"horizontal"</span></code>: Only horizontal header is fixed.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">"vertical"</span></code>: Only vertical header is fixed.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">"none"</span></code>: Neither headers are fixed.</p></li>
-</ul>
-</li>
-<li><p>default: <code class="docutils literal notranslate"><span class="pre">"both"</span></code></p></li>
-</ul>
-</dd>
-<dt class="field-even">options.mode</dt>
-<dd class="field-even"><ul class="simple">
 <li><p>color mode. It allows <code class="docutils literal notranslate"><span class="pre">"light"</span></code> or <code class="docutils literal notranslate"><span class="pre">"dark"</span></code>.</p></li>
 <li><p>default: <code class="docutils literal notranslate"><span class="pre">"light"</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-odd">options.renderers</dt>
-<dd class="field-odd"><ul class="simple">
+<dt class="field-even">options.renderers</dt>
+<dd class="field-even"><ul class="simple">
 <li><p>You can create a new Renderer inheriting <code class="docutils literal notranslate"><span class="pre">Renderer</span></code> class.</p>
 <ul>
 <li><p>It has to be registered here. The key identifies the renderer.</p></li>
@@ -323,8 +335,8 @@
 </pre></div>
 </div>
 </dd>
-<dt class="field-even">options.parsers</dt>
-<dd class="field-even"><ul class="simple">
+<dt class="field-odd">options.parsers</dt>
+<dd class="field-odd"><ul class="simple">
 <li><p>You can create a new Parser inheriting <code class="docutils literal notranslate"><span class="pre">Parser</span></code> class.</p>
 <ul>
 <li><p>It has to be registered here. The key identifies the parser.</p></li>
@@ -369,8 +381,8 @@
 </pre></div>
 </div>
 </dd>
-<dt class="field-odd">options.onSave</dt>
-<dd class="field-odd"><ul class="simple">
+<dt class="field-even">options.onSave</dt>
+<dd class="field-even"><ul class="simple">
 <li><p>A callback function on you saving.</p>
 <ul>
 <li><p>Saving events are emitted by <cite>Ctrl + s</cite> or <cite>Command + s</cite>.</p></li>
@@ -379,8 +391,8 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">(matrix,</span> <span class="pre">cellsOption)</span> <span class="pre">=&gt;</span> <span class="pre">void</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">options.onChange</dt>
-<dd class="field-even"><ul class="simple">
+<dt class="field-odd">options.onChange</dt>
+<dd class="field-odd"><ul class="simple">
 <li><p>A callback function on <code class="docutils literal notranslate"><span class="pre">matrix</span></code> or <code class="docutils literal notranslate"><span class="pre">options.cells</span></code> changed.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">(matrix,</span> <span class="pre">cellsOption)</span> <span class="pre">=&gt;</span> <span class="pre">void</span></code></p></li>
 </ul>

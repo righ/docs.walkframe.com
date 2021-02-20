@@ -59,6 +59,10 @@ options prop
 
   - `default` (lowercase) field matches all rows, columns and cells.
 
+    - You can set default height and width here.
+      
+      - defaultHeight and defaultWidth has been dropped.
+
   - An upppercase letter field means a config for a column.
 
     - e.g. **A**: 1st column, **B**: 2nd column
@@ -80,6 +84,36 @@ options prop
   :render: Renderer identity. (string)
   :parser: Parser identity. (string)
 
+
+  Example:
+
+  .. code-block:: javascript
+  
+    cells: {
+      default: {
+        width: 100, // px
+        height: 25, // px
+      },
+      A: {
+        style: {
+          borderBottom: "double 2px #ff0000",
+        },
+      },
+      1: {
+        height: 50,
+      },
+    }
+
+:options.sheetHeight:
+
+  - Sheet width size.
+  - default: ``500``
+
+:options.sheetWidth:
+
+  - History (undo, redo) size.
+  - default: ``1000``
+
 :options.historySize:
 
   - History (undo, redo) size.
@@ -87,23 +121,13 @@ options prop
 
 :options.headerHeight:
 
-  - Horizontal header height.
-  - default: ``"20px"``
+  - Horizontal header height. (number)
+  - default: ``20``
 
 :options.headerWidth:
 
-  - Vertical header width.
-  - default: ``"50px"``
-
-:options.defaultHeight:
-  
-  - Default cell height.
-  - default: ``"20px"``
-
-:options.defaultWidth:
-
-  - Default cell width.
-  - default: ``"90px"``
+  - Vertical header width. (number)
+  - default: ``50``
 
 :options.editingOnEnter:
 
@@ -114,17 +138,6 @@ options prop
 
   - Whether cell labels (navigator) show.
   - default: ``true``
-
-:options.stickyHeaders:
-
-  - Header fixing specification.
-
-    - ``"both"``: horizontal and vertical headers are both fixed.
-    - ``"horizontal"``: Only horizontal header is fixed.
-    - ``"vertical"``: Only vertical header is fixed.
-    - ``"none"``: Neither headers are fixed.
-
-  - default: ``"both"``
 
 :options.mode: 
 
