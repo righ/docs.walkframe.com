@@ -15,12 +15,12 @@ Here are `react-gridsheet <https://www.npmjs.com/package/react-gridsheet>`__ exa
   - `GitHub <https://github.com/righ/react-gridsheet>`__
   - `Document </products/react-gridsheet/>`__
 
-Example1
---------------
+Example1 - Simple example
+-----------------------------------------
 
 .. raw:: html
 
-  <iframe src="https://codesandbox.io/embed/react-gridsheet-example-simple-dhpok?fontsize=14&hidenavigation=1&theme=dark"
+  <iframe src="/_static/examples/react-gridsheet-example1/build/"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="react-gridsheet example simple"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -33,13 +33,13 @@ Example1
   - ``options.cells[column].width``: Column width.
   - ``options.cells[column].style``: Cell style in the column.
 
-Example2
---------------
+Example2 - Custom renderers with dark mode
+------------------------------------------
 
 .. raw:: html
 
-  <iframe src="https://codesandbox.io/embed/react-gridsheet-with-api-response-in-dark-mode-e4gpn?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  <iframe src="/_static/examples/react-gridsheet-example2/build/"
+     style="width:100%; height:600px; border:0; border-radius: 4px; overflow:hidden;"
      title="react-gridsheet with api response in dark mode"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
@@ -60,13 +60,13 @@ Example2
   - ImageRenderer: renders an image related to the string as a link.
   - LinkRenderer: renders a string as a link.
 
-Example3
----------------
+Example3 - Event handling
+------------------------------
 
 .. raw:: html
 
-  <iframe src="https://codesandbox.io/embed/react-gridsheet-sample-with-parser-and-feedback-method-hhlnn?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  <iframe src="/_static/examples/react-gridsheet-example3/build/"
+     style="width:100%; height:600px; border:0; border-radius: 4px; overflow:hidden;"
      title="react-gridsheet sample with parser and feedback method"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
@@ -80,3 +80,15 @@ Example3
 
   - onSave: ``setTsv`` is set to render TSV.
   - onChange: ``console.log`` is set to show the changes.
+
+Example4 - Multiple sheets
+-------------------------------
+
+.. raw:: html
+
+  <iframe src="/_static/examples/react-gridsheet-example4/build/"
+     style="width:100%; height:700px; border:0; border-radius: 4px; overflow:hidden;"
+     title="react-gridsheet sample with parser and feedback method"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>

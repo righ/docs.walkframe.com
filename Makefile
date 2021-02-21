@@ -42,3 +42,8 @@ publish:
 	@git add docs
 	@git commit -m 'update docs'
 	@git push origin main
+
+.PHONY: create-react-app
+create-react-app:
+	read -p "project name: " project; \
+	@npx create-react-app source/products/examples/$$project --template typescript
