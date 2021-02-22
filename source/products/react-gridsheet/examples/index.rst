@@ -8,15 +8,14 @@ Here are `react-gridsheet <https://www.npmjs.com/package/react-gridsheet>`__ exa
 
 .. note::
 
-  - It seems that dragging cells does not work well over iframe (embedded codesandbox) in Chrome browser.
-    
-    - Go see the example directly.
-
   - `GitHub <https://github.com/righ/react-gridsheet>`__
   - `Document </products/react-gridsheet/>`__
 
 Example1 - Simple example
 -----------------------------------------
+
+:Project: `react-gridsheet-example1/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/_static/examples/react-gridsheet-example1>`__
+:Source: `react-gridsheet-example1/src/App.tsx <https://github.com/walkframe/docs.walkframe.com/blob/main/source/_static/examples/react-gridsheet-example1/src/App.tsx>`__
 
 .. raw:: html
 
@@ -35,6 +34,9 @@ Example1 - Simple example
 
 Example2 - Custom renderers with dark mode
 ------------------------------------------
+
+:Project: `react-gridsheet-example2/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/_static/examples/react-gridsheet-example2>`__
+:Source: `react-gridsheet-example2/src/App.tsx <https://github.com/walkframe/docs.walkframe.com/blob/main/source/_static/examples/react-gridsheet-example2/src/App.tsx>`__
 
 .. raw:: html
 
@@ -63,6 +65,9 @@ Example2 - Custom renderers with dark mode
 Example3 - Event handling
 ------------------------------
 
+:Project: `react-gridsheet-example3/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/_static/examples/react-gridsheet-example3>`__
+:Source: `react-gridsheet-example3/src/App.tsx <https://github.com/walkframe/docs.walkframe.com/blob/main/source/_static/examples/react-gridsheet-example3/src/App.tsx>`__
+
 .. raw:: html
 
   <iframe src="/_static/examples/react-gridsheet-example3/build/"
@@ -84,6 +89,9 @@ Example3 - Event handling
 Example4 - Multiple sheets
 -------------------------------
 
+:Project: `react-gridsheet-example4/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/_static/examples/react-gridsheet-example4>`__
+:Source: `react-gridsheet-example4/src/App.tsx <https://github.com/walkframe/docs.walkframe.com/blob/main/source/_static/examples/react-gridsheet-example4/src/App.tsx>`__
+
 .. raw:: html
 
   <iframe src="/_static/examples/react-gridsheet-example4/build/"
@@ -92,3 +100,10 @@ Example4 - Multiple sheets
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
+
+- There are 2 sheets:
+
+  - The above sheet is test data.
+  - The sheet below is two-factor coverage combinations made from the testdata.
+    
+    - Pairwise tool: `CoverTable <https://github.com/walkframe/covertable>`__.
