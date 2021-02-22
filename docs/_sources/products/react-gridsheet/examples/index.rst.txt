@@ -14,12 +14,12 @@ Here are `react-gridsheet <https://www.npmjs.com/package/react-gridsheet>`__ exa
 Example1 - Simple example
 -----------------------------------------
 
-:Project: `react-gridsheet-example1/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/_static/examples/react-gridsheet-example1>`__
-:Source: `react-gridsheet-example1/src/App.tsx <https://github.com/walkframe/docs.walkframe.com/blob/main/source/_static/examples/react-gridsheet-example1/src/App.tsx>`__
+:Project: `react-gridsheet-example1/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/products/react-gridsheet/examples/example1>`__
+:Source: `react-gridsheet-example1/src/App.tsx <https://github.com/walkframe/docs.walkframe.com/blob/main/source/products/react-gridsheet/examples/example1/src/App.tsx>`__
 
 .. raw:: html
 
-  <iframe src="/_static/examples/react-gridsheet-example1/build/"
+  <iframe src="/_static/examples/react-gridsheet-example1/"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="react-gridsheet example simple"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -35,12 +35,12 @@ Example1 - Simple example
 Example2 - Custom renderers with dark mode
 ------------------------------------------
 
-:Project: `react-gridsheet-example2/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/_static/examples/react-gridsheet-example2>`__
-:Source: `react-gridsheet-example2/src/App.tsx <https://github.com/walkframe/docs.walkframe.com/blob/main/source/_static/examples/react-gridsheet-example2/src/App.tsx>`__
+:Project: `react-gridsheet-example2/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/products/react-gridsheet/examples/example>`__
+:Source: `react-gridsheet-example2/src/App.tsx <https://github.com/walkframe/docs.walkframe.com/blob/main/source/products/react-gridsheet/examples/example2/src/App.tsx>`__
 
 .. raw:: html
 
-  <iframe src="/_static/examples/react-gridsheet-example2/build/"
+  <iframe src="/_static/examples/react-gridsheet-example2/"
      style="width:100%; height:600px; border:0; border-radius: 4px; overflow:hidden;"
      title="react-gridsheet with api response in dark mode"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -65,13 +65,13 @@ Example2 - Custom renderers with dark mode
 Example3 - Event handling
 ------------------------------
 
-:Project: `react-gridsheet-example3/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/_static/examples/react-gridsheet-example3>`__
-:Source: `react-gridsheet-example3/src/App.tsx <https://github.com/walkframe/docs.walkframe.com/blob/main/source/_static/examples/react-gridsheet-example3/src/App.tsx>`__
+:Project: `react-gridsheet-example3/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/products/react-gridsheet/examples/example3>`__
+:Source: `react-gridsheet-example3/src/App.tsx <https://github.com/walkframe/docs.walkframe.com/blob/main/source/products/react-gridsheet/examples/example3/src/App.tsx>`__
 
 .. raw:: html
 
-  <iframe src="/_static/examples/react-gridsheet-example3/build/"
-     style="width:100%; height:600px; border:0; border-radius: 4px; overflow:hidden;"
+  <iframe src="/_static/examples/react-gridsheet-example3/"
+     style="width:100%; height:700px; border:0; border-radius: 4px; overflow:hidden;"
      title="react-gridsheet sample with parser and feedback method"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
@@ -89,12 +89,12 @@ Example3 - Event handling
 Example4 - Multiple sheets
 -------------------------------
 
-:Project: `react-gridsheet-example4/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/_static/examples/react-gridsheet-example4>`__
-:Source: `react-gridsheet-example4/src/App.tsx <https://github.com/walkframe/docs.walkframe.com/blob/main/source/_static/examples/react-gridsheet-example4/src/App.tsx>`__
+:Project: `react-gridsheet-example4/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/products/react-gridsheet/examples/example4>`__
+:Source: `react-gridsheet-example4/src/App.tsx <https://github.com/walkframe/docs.walkframe.com/blob/main/source/products/react-gridsheet/examples/example4/src/App.tsx>`__
 
 .. raw:: html
 
-  <iframe src="/_static/examples/react-gridsheet-example4/build/"
+  <iframe src="/_static/examples/react-gridsheet-example4/"
      style="width:100%; height:700px; border:0; border-radius: 4px; overflow:hidden;"
      title="react-gridsheet sample with parser and feedback method"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
