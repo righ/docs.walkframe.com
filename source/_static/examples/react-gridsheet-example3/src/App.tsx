@@ -51,6 +51,7 @@ export default function App() {
         data={data}
         options={{
           headerHeight: 30,
+          sheetHeight: 300,
           cells: {
             default: { width: 200, height: 50 },
             A: { width: 50, style: { textAlign: "center" } },
