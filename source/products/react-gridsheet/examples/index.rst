@@ -107,3 +107,18 @@ Example4 - Multiple sheets
   - The sheet below is two-factor coverage combinations made from the testdata.
     
     - Pairwise tool: `CoverTable <https://github.com/walkframe/covertable>`__.
+
+Example5 - Mass data table fitting the parent element
+-----------------------------------------------------
+
+:Project: `react-gridsheet-example5/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/products/react-gridsheet/examples/example5>`__
+:Source: `react-gridsheet-example5/src/App.tsx <https://github.com/walkframe/docs.walkframe.com/blob/main/source/products/react-gridsheet/examples/example5/src/App.tsx>`__
+
+.. raw:: html
+
+  <iframe src="/_static/examples/react-gridsheet-example5/"
+     style="width:100%; height:700px; border:0; border-radius: 4px; overflow:hidden;"
+     title="react-gridsheet sample with parser and feedback method"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
