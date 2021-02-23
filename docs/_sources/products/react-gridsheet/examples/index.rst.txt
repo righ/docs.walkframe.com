@@ -102,7 +102,7 @@ Example4 - Date reloading
    ></iframe>
 
 - The above sheet is test data.
-- The sheet below is two-factor coverage combinations made from the testdata.
+- The sheet below shows two-factor coverage combinations made from the testdata.
     
   - Pairwise tool: `CoverTable <https://github.com/walkframe/covertable>`__.
 
