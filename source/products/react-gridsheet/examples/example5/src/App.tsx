@@ -2,70 +2,99 @@ import * as React from "react";
 import {
   GridSheet,
   Renderer,
-  MatrixType,
 } from "react-gridsheet";
 import "./App.css";
 
-const initialData: MatrixType = [];
-for (let g = 255; g >= 0; g--) {
-  const g16 = g.toString(16);
-  const row: string[] = [];
-  for (let b = 255; b >= 0; b--) {
-    const b16 = b.toString(16);
-    row.push(`#00${g16.length === 1 ? "0" + g16 : g16 }${b16.length === 1 ? "0" + b16 : b16}`);
-  }
-  initialData.push(row);
-};
 
-const initialHeight = 200;
-const initialWidth = 300;
 
 export default function App() {
-  const wrapperRef = React.useRef<HTMLDivElement>(
-    document.createElement("div")
-  );
-  const [height, setHeight] = React.useState(initialHeight);
-  const [width, setWidth] = React.useState(initialWidth);
-  const [data] = React.useState(initialData);
-
   return (
     <div className="App">
-      <h1>Color code table (#00ffff ~ #000000)</h1>
-      <div
-        ref={wrapperRef} 
-        onMouseEnter={(e) => {
-          setHeight(e.currentTarget.clientHeight);
-          setWidth(e.currentTarget.clientWidth);
-        }}
-        style={{
-          width,
-          height,
-          resize: "both",
-          overflow: "hidden",
-          border: "solid 1px #000000",
-        }}>
-        <GridSheet
-          data={data}
-          options={{
-            sheetHeight: wrapperRef.current.clientHeight || initialHeight,
-            sheetWidth: wrapperRef.current.clientWidth || initialWidth,
-            cells: {
-              default: {
-                style: {color: "#ffffff"},
-                renderer: "coloring",
-              }
-            },
-            renderers: {
-              coloring: new ColoringRenderer(),
-            }
-          }}
-        />
-      </div>
-      
-      <div style={{margin: 20, fontSize: 30}}>
-        Drag right-bottom of this table.
-      </div>
-      
+      <h1>Drag right bottom of the sheets</h1>
+      <table style={{tableLayout: "fixed", width: "100%", borderCollapse: "collapse"}}>
+        <tbody>
+          <tr>
+            <td>
+              <h2>Resize: both</h2>
+              <GridSheet
+                data={Array.from({length: 256}, (i, c) => Array.from({length: 100}, (j, t) => `rgba(${c},${c},${c},${(100-t) / 100})`))}
+                style={{ maxWidth: "100%" }}
+                options={{
+                  cells: {
+                    default: {
+                      style: {color: "#ffffff", fontSize: 9},
+                      renderer: "coloring",
+                    }
+                  },
+                  renderers: {
+                    coloring: new ColoringRenderer(),
+                  },
+                  sheetResize: "both",
+                }}
+              />
+            </td>
+            <td>
+              <h2>Resize: vertical</h2>
+              <GridSheet
+                data={Array.from({length: 256}, (i, r) => Array.from({length: 256}, (j, g) => `#${(255-r).toString(16).padStart(2, "0")}${(255-g).toString(16).padStart(2, "0")}00`))}
+                style={{ maxWidth: "100%"}}
+                options={{
+                  cells: {
+                    default: {
+                      style: {color: "#ffffff"},
+                      renderer: "coloring",
+                    }
+                  },
+                  renderers: {
+                    coloring: new ColoringRenderer(),
+                  },
+                  sheetResize: "vertical",
+                }}
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Resize: horizontal</h2>
+              <GridSheet
+                data={Array.from({length: 256}, (i, r) => Array.from({length: 256}, (j, b) => `#${(255-r).toString(16).padStart(2, "0")}00${(255-b).toString(16).padStart(2, "0")}`))}
+                style={{ maxWidth: "100%"}}
+                options={{
+                  cells: {
+                    default: {
+                      style: {color: "#ffffff"},
+                      renderer: "coloring",
+                    }
+                  },
+                  renderers: {
+                    coloring: new ColoringRenderer(),
+                  },
+                  sheetResize: "horizontal",
+                }}
+              />
+            </td>
+            <td>
+              <h2>Resize: none</h2>
+              <GridSheet
+                data={Array.from({length: 256}, (i, g) => Array.from({length: 256}, (j, b) => `#00${(255-g).toString(16).padStart(2, "0")}${(255-b).toString(16).padStart(2, "0")}`))}
+                style={{ maxWidth: "100%"}}
+                options={{
+                  cells: {
+                    default: {
+                      style: {color: "#ffffff"},
+                      renderer: "coloring",
+                    }
+                  },
+                  renderers: {
+                    coloring: new ColoringRenderer(),
+                  },
+                  sheetResize: "none",
+                }}
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };

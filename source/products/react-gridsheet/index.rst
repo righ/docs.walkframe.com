@@ -41,6 +41,8 @@ How to use
         options={{ // Optional
           // all options are optional
         }}
+        className="some-class"
+        style={{ maxWidth: "100%" }}
       />
     </div>);
   }
@@ -231,6 +233,12 @@ options prop
       />)
     }
 
+:options.resize: 
+
+  :both: allows resizing both directions.
+  :vertical: allows resizing vertically.
+  :horizontal: allows resizing horizontally.
+  :none: does not allow resizing.
 
 :options.onSave: 
 

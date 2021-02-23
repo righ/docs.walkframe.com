@@ -86,7 +86,7 @@ Example3 - Event handling
   - onSave: ``setTsv`` is set to render TSV.
   - onChange: ``console.log`` is set to show the changes.
 
-Example4 - Multiple sheets
+Example4 - Date reloading
 -------------------------------
 
 :Project: `react-gridsheet-example4/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/products/react-gridsheet/examples/example4>`__
@@ -101,14 +101,12 @@ Example4 - Multiple sheets
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-- There are 2 sheets:
-
-  - The above sheet is test data.
-  - The sheet below is two-factor coverage combinations made from the testdata.
+- The above sheet is test data.
+- The sheet below is two-factor coverage combinations made from the testdata.
     
-    - Pairwise tool: `CoverTable <https://github.com/walkframe/covertable>`__.
+  - Pairwise tool: `CoverTable <https://github.com/walkframe/covertable>`__.
 
-Example5 - Mass data table fitting the parent element
+Example5 - Limit width, Resize, Multiple sheets
 -----------------------------------------------------
 
 :Project: `react-gridsheet-example5/ <https://github.com/walkframe/docs.walkframe.com/tree/main/source/products/react-gridsheet/examples/example5>`__
@@ -122,3 +120,9 @@ Example5 - Mass data table fitting the parent element
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
+
+- ``style`` and ``className`` props will be passed.
+
+  - ``{ maxWidth: "100%"}`` prevents the sheet exceeding the parent width.
+
+- ``options.sheetResize`` means `css resize <https://developer.mozilla.org/en-US/docs/Web/CSS/resize>`__ of the sheet.
