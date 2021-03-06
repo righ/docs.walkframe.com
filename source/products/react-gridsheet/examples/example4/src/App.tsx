@@ -267,11 +267,13 @@ export default function App() {
           });
           let result = rowsAsync.next();
           (async () => {
-            while (!result.done) {
+            for (let i = 0; !result.done; i++) {
               rows.push(result.value as any[]);
               result = rowsAsync.next();
-              setResult([...rows]);
-              await sleep(0.1);
+              if (i % 5 === 0) {
+                setResult([...rows]);
+                await sleep(0.1);
+              }
             }
             setProcessing(false);
           })();
