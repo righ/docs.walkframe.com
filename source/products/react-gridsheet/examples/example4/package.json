@@ -14,7 +14,7 @@
     "covertable": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-gridsheet": "^0.5.0",
+    "react-gridsheet": "^0.5.1",
     "react-scripts": "4.0.2",
     "typescript": "^4.1.5",
     "web-vitals": "^1.1.0"
@@ -22,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "rebuild": "rm -rf build node_modules && npm install && react-scripts build",
+    "rebuild": "npm install react-gridsheet@latest && npm install && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
