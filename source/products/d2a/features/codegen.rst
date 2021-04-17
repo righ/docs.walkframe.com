@@ -27,6 +27,8 @@ Example
   - This file was made by ``$ ./manage.py sqla_codegen --settings=settings.codegen --path=models_sqla_example.py``.
   - `settings/codegen.py <https://github.com/walkframe/d2a/blob/master/project_postgresql/settings/codegen.py>`__
 
+    - `Project configuration </products/d2a/config.html>`__
+
 
 Command options
 ---------------------

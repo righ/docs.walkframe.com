@@ -34,6 +34,12 @@ You are ready.
 
 Then you can import sqlalchemy model on every apps.
 
+.. note::
+
+  It differs from `Code generation </products/d2a/features/codegen.html>`__.
+
+  Auto loaded models will save on in-memory and will not be output to a file.
+
 Example:
 
 .. code-block::

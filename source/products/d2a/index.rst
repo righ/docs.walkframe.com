@@ -60,7 +60,7 @@ Add d2a to settings.INSTALLED_APPS.
 Features
 -------------------------
 
-- `Code generation </products/d2a/features/codegen.html>`__
+- `Code generation </products/d2a/features/codegen.html>`__ (Main feature)
 - `Query shortcut </products/d2a/features/shortcut.html>`__
 - `Auto loading </products/d2a/features/autoload.html>`__ (Deprecated since 3.0.x)
 

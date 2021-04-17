@@ -88,8 +88,8 @@ Example:
 
   D2A_CONFIG = {
       'AUTOLOAD': {
-          'module': 'modelsa',
-          'db_type': "mysql",
+          'module': 'modelsa',  # module name
+          'db_type': "mysql",  # database type
       },
   }
 

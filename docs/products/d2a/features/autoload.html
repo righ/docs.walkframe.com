@@ -153,6 +153,11 @@
 <h2>All apps<a class="headerlink" href="#all-apps" title="Permalink to this headline">¶</a></h2>
 <p>You are ready.</p>
 <p>Then you can import sqlalchemy model on every apps.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It differs from <a class="reference external" href="/products/d2a/features/codegen.html">Code generation</a>.</p>
+<p>Auto loaded models will save on in-memory and will not be output to a file.</p>
+</div>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">books</span> <span class="kn">import</span> <span class="n">models_sqla</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">models_sqla</span><span class="o">.</span>  <span class="c1"># tab completion</span>
