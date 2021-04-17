@@ -17,9 +17,9 @@ ReactGridsheet
   * - Description:
     - A react component like spreadsheet.
   * - Uses:
-    - TypeScript, React, Redux
+    - TypeScript, React
   * - GitHub:
-    - https://github.com/righ/react-gridsheet
+    - https://github.com/walkframe/react-gridsheet
 
 CoverTable
 --------------
@@ -43,7 +43,7 @@ d2a
   :stub-columns: 1
 
   * - Document:
-    - Coming soon.
+    - `d2a </products/d2a/>`__
   * - Description:
     - Django models translator into SQLAlchemy.
   * - Uses:
