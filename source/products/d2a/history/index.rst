@@ -6,7 +6,7 @@ Back to `doc index </products/d2a/>`__
 3.x
 -------
 - Code generation debut.
-- Auto loading got to be deprecated.
+- Auto loading got deprecated.
 
 `Here for details in 3.x <3.x.html>`__
 
