@@ -113,7 +113,7 @@ Current original template is `here <https://github.com/walkframe/d2a/blob/master
 
 COL_PARAMS
 ------------------
-:type: ``dict[str, dict[str, dict]]``
+:type: ``dict[str, dict[str, any]]``
 
 This option updates args that are going to be specified for the ``sqlalchemy.sql.schema.Column``.
 
@@ -183,7 +183,7 @@ Example:
 
 REL_PARAMS
 ------------------
-:type: ``dict[str, dict[str, dict]]``
+:type: ``dict[str, dict[str, any]]``
 
 This option updates args that are going to be specified for the ``sqlalchemy.orm.relationship``.
 
@@ -225,7 +225,7 @@ This option updates args that are going to be specified for the ``sqlalchemy.orm
 
 TYPE_PARAMS
 ------------------
-:type: ``dict[str, dict[str, dict]]``
+:type: ``dict[str, dict[str, any]]``
 
 This option updates args that are going to be specified for the ``sqlalchemy.sql.type_api.TypeEngine``.
 
